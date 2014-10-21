@@ -79,10 +79,10 @@ def det_winner(candidates, num_votes, num_candidates):
             index = all_votes.index(top)
             winner.append(candidates[index].getname())
             return winner
-        # elif(top == (num_votes / num_candidates)):
-        #     for can in candidates:
-        #         winner.append(can.getname())
-        #         return 
+        elif(top == (num_votes / num_candidates)):
+            for can in candidates:
+                winner.append(can.getname())
+            return winner
         # else:
         #     losers = []
         #     for num in all_votes:
