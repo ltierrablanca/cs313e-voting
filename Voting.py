@@ -47,6 +47,13 @@ class Ballot:
     def adjustchoice(self):
     	self.choice += 1
 
+    def __str__ (self):
+        s = ""
+        for i in range(len(self.votes) - 1):
+            s = s + self.votes[i] + " "
+        s = s + self.votes[len(self.votes) - 1]
+        return s
+
     
 # will read the input and build the ballot and candidate objects
 def voting_read(r, w):
