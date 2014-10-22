@@ -16,18 +16,6 @@ class Candidate:
     def getnumvotes(self):
 	    return len(self.ballots)
 
-    # will return the ballots for this candidate
-    def getballots(self):
-        return self.ballots
-
-    # will return the candidates name
-    def getname(self):
-        return self.name
-
-    # will return the candidates number
-    def getnum(self):
-        return self.num
-
     # will return string version of the candidate
     def __str__ (self):
         return "Candidate " + str(self.num) + ", " + self.name + ", has " + str(self.getnumvotes()) + " votes."
@@ -96,11 +84,11 @@ def det_winner(candidates, num_votes, num_candidates):
     top = max(can_votes)
     if(top > (num_votes / 2)):              #candidate has over 50% of the votes
         index = can_votes.index(top)
-        winner.append(candidates[index].getname())
+        winner.append(candidates[index].name)
         return winner
     elif(top == (num_votes / num_candidates)):              #all candidates are tied
         for can in candidates:
-            winner.append(can.getname())
+            winner.append(can.name)
         return winner
     else:
         redis_votes(candidates, num_votes)
@@ -114,7 +102,7 @@ def redis_votes(candidates, num_votes):
     low = min(can_votes)
     index = can_votes.index(low)
     loser = candidates.pop(index)
-    ballots = loser.getballots()
+    ballots = loser.ballots
     for x in ballots:
         x.adjustchoice()
     while(len(ballots) != 0):
@@ -122,7 +110,7 @@ def redis_votes(candidates, num_votes):
             valid = False
             choice = x.getchoice()
             for can in candidates:
-                if(choice == can.getnum()):
+                if(choice == can.num):
                     valid = True
                     can.addballot(x)
                     ballots.remove(x)
