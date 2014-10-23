@@ -1,3 +1,5 @@
+#These classes and methods are used to solve the Australian Voting problem.
+
 # will simulate a candidate and keep track of the candidate's name, number of votes 
 # it has and which ballots are currently choosing this candidate
 class Candidate:
@@ -35,6 +37,7 @@ class Ballot:
     def adjustchoice(self):
     	self.choice += 1
 
+    #will return string version of a ballot
     def __str__ (self):
         s = ""
         for i in range(len(self.votes) - 1):
