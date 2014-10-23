@@ -1,0 +1,71 @@
+commit 49b04c69616e3d0f9f83df37fdad4c59acfffd49
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Wed Oct 22 22:47:37 2014 -0500
+
+    Voting.py has extra comments and Voting.html added
+
+commit 62aba8aa23f31960d3b3f7c3933fbf25df5112fd
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Wed Oct 22 22:40:18 2014 -0500
+
+    adding required fils besides html and log
+
+commit 2d9a448d1eb798748b0b120018a330fd38ac1bfa
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Wed Oct 22 22:11:22 2014 -0500
+
+    TestVoting.py now has a total of 21 Unit Tests
+
+commit 8dfdd987a5f42e9b611565e12a5b20e7ab2141ec
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Wed Oct 22 21:51:31 2014 -0500
+
+    Voting.py correctly identifies winner. TestVoting now contains many unit tests.
+
+commit a90d9e0511cd957d87d5631e1a8f23dee458133d
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Tue Oct 21 20:01:35 2014 -0500
+
+    Candidate class variables are now accessed directly, rather than through functions
+
+commit 3aa1d3e196e14f0e27f85c92aef74dc315c690c0
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Tue Oct 21 19:58:38 2014 -0500
+
+    Ballot class now has 2 tests
+
+commit 00e581074cba9623f3c39cec342fb134c322d992
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Tue Oct 21 19:35:07 2014 -0500
+
+    added a str() function to the Ballot class
+
+commit 47bf98f001581248faec42e86602b3c6747a6d1f
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Tue Oct 21 19:27:41 2014 -0500
+
+    redis_votes is currently broken and produces an IndexError
+
+commit 2323bf5c4bc25e342b4535e1ccc714aa5ff776dc
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Tue Oct 21 18:21:18 2014 -0500
+
+    Voting.py will now determine if there is a tie between all of the candidates
+
+commit 23b0c24d10b0b8a3bf293c6afb16aeebee98004a
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Tue Oct 21 17:57:10 2014 -0500
+
+    Voting.py can now correctly identify a winner with over half of the votes
+
+commit 5196b3c3b2c1b3e3262d6cbdde2db36f660d3f3f
+Author: Luis Tierrablanca <ltierrablanca@yahoo.com>
+Date:   Mon Oct 20 19:44:24 2014 -0500
+
+    Voting.py can now read all candidates and ballots regardless of how many test cases
+
+commit 16ffd69d71b7db76c1eb978c024c2e1e318bd65b
+Author: ltierrablanca <ltierrablanca@yahoo.com>
+Date:   Sat Sep 6 17:58:53 2014 -0500
+
+    Initial commit
